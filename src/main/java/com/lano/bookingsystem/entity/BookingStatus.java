@@ -1,0 +1,19 @@
+package com.lano.bookingsystem.entity;
+
+public enum BookingStatus {
+    PENDING("Pending"),
+    CONFIRMED("Confirmed"),
+    CANCELLED("Cancelled"),
+    COMPLETED("Completed"),
+    NO_SHOW("No Show");
+
+    private final String displayName;
+
+    BookingStatus(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+}
